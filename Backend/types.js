@@ -9,7 +9,12 @@ const updateTodoSchema = zod.object({
 	id: zod.string(),
 });
 
+const deleteTodoSchema = zod.object({
+	id: zod.string(),
+});
+
 module.exports = {
 	createTodoSchema,
 	updateTodoSchema,
+	deleteTodoSchema,
 };
